@@ -25,6 +25,8 @@ function draw_new_board(n){
     }
 }   
 
-
+function set_color(color){
+    console.log(color);
+}
 
 draw_new_board(16);
