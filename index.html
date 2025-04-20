@@ -11,9 +11,11 @@
     <div class="header"></div>
     <div class="content">
       <div class="controls">
-        <button class="color-control red" onclick="set_color('red')">RED</button>
-        <button class="color-control green" onclick="set_color('green')">GREEN</button>
-        <button class="color-control blue" onclick="set_color('blue')">BLUE</button>
+        <button class="control clear" onclick="reset_board()">CLEAR</button>
+        <button class="control size" onclick="set_size()">SET SIZE</button>
+        <button class="control red" onclick="set_global_color('red')">RED</button>
+        <button class="control green" onclick="set_global_color('green')">GREEN</button>
+        <button class="control blue" onclick="set_global_color('blue')">BLUE</button>
       </div>
       <div class="container"></div>
     </div>

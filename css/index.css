@@ -23,24 +23,32 @@ body{
     flex-direction: column;
 }
 
-.color-control{
+.control{
     color: white;
-    height: 60px;
-    width: 60px;
+    height: 70px;
+    width: 70px;
     border: 4px solid black;
     border-radius: 5px;
     margin: 10px;
 }
 
-.color-control.red{
+.control.clear{
+    background-color: darkgray;
+}
+
+.control.size{
+    background-color: darkgray;
+}
+
+.control.red{
     background-color: red;
 }
 
-.color-control.blue{
+.control.blue{
     background-color: blue;
 }
 
-.color-control.green{
+.control.green{
     background-color: green;
 }
 
