@@ -6,6 +6,13 @@ const container = document.querySelector(".container");
 let current_size = 0;
 let default_color = "darkgray";
 let draw_color = "red";
+let use_random_color = false;
+
+const RANDOM_COLORS = [
+    "Aqua", "Aquamarine", "BlueViolet", "Brown", 
+    "Chartreuse", "DarkGoldenRod", 
+    "DeepPink", "Indigo", "Yellow", "Violet"
+];
 
 function reset_board(){
     draw_new_board(current_size);
@@ -40,6 +47,10 @@ function set_global_color(color){
     draw_color = color;
 }
 
+function invert_random_drawing(){
+    use_random_color = !use_random_color;
+}
+
 function set_size(){
     let size = prompt("Enter Size:");
 
@@ -57,7 +68,12 @@ function set_size(){
 }
 
 function div_hovered(div){
-    div.style.backgroundColor = draw_color;
+    if (use_random_color){
+        let random_int = Math.floor(Math.random() * 10);
+        div.style.backgroundColor = RANDOM_COLORS[random_int];
+    } else {    
+        div.style.backgroundColor = draw_color;
+    }
 }
 
 draw_new_board(16);

@@ -30,14 +30,11 @@ body{
     border: 4px solid black;
     border-radius: 5px;
     margin: 10px;
-}
-
-.control.clear{
     background-color: darkgray;
 }
 
-.control.size{
-    background-color: darkgray;
+.control.random{
+    background-color: purple;
 }
 
 .control.red{
@@ -51,6 +48,7 @@ body{
 .control.green{
     background-color: green;
 }
+
 
 .start {
   text-align: center;
