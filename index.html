@@ -3,23 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Etch s sketch!</title>
+    <title>Badger-Sketch</title>
     <link href="./css/index.css" rel="stylesheet" />
     <script src="./js/sketch.js" defer></script>
   </head>
   <body>
-    <div class="header"></div>
+    <div class="header">
+      <h1>Welcome to Badger-Sketch!</h1>
+    </div>
     <div class="content">
       <div class="controls">
         <button class="control clear" onclick="reset_board()">CLEAR</button>
         <button class="control size" onclick="set_size()">SET SIZE</button>
+        <button class="control random" onclick="invert_random_drawing()">TOGGLE RANDOM</button>
         <button class="control red" onclick="set_global_color('red')">RED</button>
         <button class="control green" onclick="set_global_color('green')">GREEN</button>
         <button class="control blue" onclick="set_global_color('blue')">BLUE</button>
-        <button class="control random" onclick="invert_random_drawing()">TOGGLE RANDOM</button>
       </div>
       <div class="container"></div>
     </div>
-    <div class="footer"></div>
+    <div class="footer">
+      <p> View the <a href="https://github.com/Fearless-Badger/odin-etch-sketch" target="_blank">source code</a>   |   Made by <a href="https://github.com/Fearless-Badger" target="_blank">Micah Najacht</a></p>
+    </div>
   </body>
 </html>
