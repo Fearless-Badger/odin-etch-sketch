@@ -1,0 +1,24 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.start {
+  text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    height: 800px;
+    width: 800px;
+}
+
+.new_child{
+    border: 1px solid black;
+}
